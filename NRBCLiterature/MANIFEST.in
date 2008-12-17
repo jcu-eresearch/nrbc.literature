@@ -1,0 +1,2 @@
+recursive-include nrbc *
+global-exclude *pyc

@@ -1,0 +1,23 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="nrbc.literature">
+
+    <!-- configure your content components here -->
+
+    <!-- -*- extra stuff goes here -*- -->
+    <class class=".literature.Literature">
+
+        <require
+            permission="zope2.View"
+            interface="..interfaces.ILiterature"
+            />
+
+        <require
+            permission="cmf.ModifyPortalContent"
+            set_schema="..interfaces.ILiterature"
+            />
+
+    </class>
+
+</configure>
