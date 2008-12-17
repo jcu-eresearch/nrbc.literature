@@ -3,7 +3,7 @@
 .. Note!
    -----
    Update the following URLs to point to your:
-
+   -test
    - code repository
    - bug tracker
    - questions/comments feedback mail
