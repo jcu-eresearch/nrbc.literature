@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-This module contains the tool of NRBCLiterature
+This module contains the tool of nrbc.literature
 """
 import os
 from setuptools import setup, find_packages
@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-version = '0.1dev'
+version = '0.1'
 
 long_description = (
     read('README.txt')
@@ -34,7 +34,7 @@ long_description = (
 
 tests_require=['zope.testing']
 
-setup(name='NRBCLiterature',
+setup(name='nrbc.literature',
       version=version,
       description="Literature content type for the NRBC portal",
       long_description=long_description,

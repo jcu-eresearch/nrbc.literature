@@ -1,11 +1,11 @@
-NRBCLiterature Installation
+nrbc.literature Installation
 ==========================
 
-To install NRBCLiterature into the global Python environment (or a workingenv),
+To install nrbc.literature into the global Python environment (or a workingenv),
 using a traditional Zope 2 instance, you can do this:
 
  * When you're reading this you have probably already run 
-   ``easy_install NRBCLiterature``. Find out how to install setuptools
+   ``easy_install nrbc.literature``. Find out how to install setuptools
    (and EasyInstall) here:
    http://peak.telecommunity.com/DevCenter/EasyInstall
 
@@ -16,7 +16,7 @@ using a traditional Zope 2 instance, you can do this:
 
    into your Zope instance.
 
- * Create a file called ``NRBCLiterature-configure.zcml`` in the
+ * Create a file called ``nrbc.literature-configure.zcml`` in the
    ``/path/to/instance/etc/package-includes`` directory.  The file
    should only contain this::
 
@@ -28,13 +28,13 @@ using a traditional Zope 2 instance, you can do this:
 Alternatively, if you are using zc.buildout and the plone.recipe.zope2instance
 recipe to manage your project, you can do this:
 
- * Add ``NRBCLiterature`` to the list of eggs to install, e.g.:
+ * Add ``nrbc.literature`` to the list of eggs to install, e.g.:
  
     [buildout]
     ...
     eggs =
         ...
-        NRBCLiterature
+        nrbc.literature
         
   * Tell the plone.recipe.zope2instance recipe to install a ZCML slug:
   
@@ -42,7 +42,7 @@ recipe to manage your project, you can do this:
     recipe = plone.recipe.zope2instance
     ...
     zcml =
-        NRBCLiterature
+        nrbc.literature
         
   * Re-run buildout, e.g. with:
   
